@@ -4,6 +4,10 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Sajjad Barzegar</title>
+  <meta
+    name="description"
+    content="Academic website of Sajjad Barzegar, PhD student focused on advanced drug delivery systems, biomaterials, and tissue regeneration."
+  />
 
   <link
     href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
@@ -12,38 +16,41 @@
     crossorigin="anonymous"
   />
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Source+Sans+3:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Source+Sans+3:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
 
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-
   <!-- HERO SECTION -->
   <section class="hero-section" id="home">
     <header class="site-header">
       <div class="container">
         <div class="header-inner d-flex flex-wrap align-items-center justify-content-between">
-          <a href="#home" class="d-flex align-items-center text-white text-decoration-none">
+          <a href="#home" class="brand-mark d-flex align-items-center text-white text-decoration-none" aria-label="Homepage">
             <svg
               class="logo-icon bi bi-mortarboard"
               xmlns="http://www.w3.org/2000/svg"
               fill="currentColor"
               viewBox="0 0 16 16"
-              aria-label="Logo"
+              aria-hidden="true"
             >
               <path d="M8.211 2.047a.5.5 0 0 0-.422 0l-7.5 3.5a.5.5 0 0 0 .025.917l7.5 3a.5.5 0 0 0 .372 0L14 7.14V13a1 1 0 0 0-1 1v2h3v-2a1 1 0 0 0-1-1V6.739l.686-.275a.5.5 0 0 0 .025-.917zM8 8.46 1.758 5.965 8 3.052l6.242 2.913z"/>
               <path d="M4.176 9.032a.5.5 0 0 0-.656.327l-.5 1.7a.5.5 0 0 0 .294.605l4.5 1.8a.5.5 0 0 0 .372 0l4.5-1.8a.5.5 0 0 0 .294-.605l-.5-1.7a.5.5 0 0 0-.656-.327L8 10.466zm-.068 1.873.22-.748 3.496 1.311a.5.5 0 0 0 .352 0l3.496-1.311.22.748L8 12.46z"/>
             </svg>
+            <span class="brand-text ms-2">Sajjad Barzegar</span>
           </a>
 
           <ul class="nav fs-5">
             <li class="nav-item"><a href="#home" class="nav-link px-3 active-link">Home</a></li>
-            <li class="nav-item"><a href="#about" class="nav-link px-3 text-white">About</a></li>
-            <li class="nav-item"><a href="#research" class="nav-link px-3 text-white">Research</a></li>
-            <li class="nav-item"><a href="#papers" class="nav-link px-3 text-white">Papers</a></li>
-            <li class="nav-item"><a href="#contact" class="nav-link px-3 text-white">Contact</a></li>
+            <li class="nav-item"><a href="#about" class="nav-link px-3">About</a></li>
+            <li class="nav-item"><a href="#research" class="nav-link px-3">Research</a></li>
+            <li class="nav-item"><a href="#papers" class="nav-link px-3">Papers</a></li>
+            <li class="nav-item"><a href="#contact" class="nav-link px-3">Contact</a></li>
           </ul>
         </div>
       </div>
@@ -52,15 +59,21 @@
     <div class="hero-content">
       <div class="container">
         <div class="row align-items-center gy-4">
-          <div class="col-lg-5 hero-text">
+          <div class="col-lg-5 hero-text reveal reveal-up">
+            <p class="hero-kicker mb-2">Academic Portfolio</p>
             <h1 class="display-4 fw-bold mb-3">Sajjad Barzegar</h1>
             <p class="lead mb-0">
               Focuses on research as the creation of new knowledge.
             </p>
+
+            <div class="hero-actions mt-4">
+              <a href="#research" class="btn btn-academic me-3 mb-3">Explore Research</a>
+              <a href="#papers" class="btn btn-outline-academic mb-3">View Publications</a>
+            </div>
           </div>
 
           <div class="col-lg-7">
-            <div class="hero-image-wrapper">
+            <div class="hero-image-wrapper reveal reveal-up reveal-delay-2">
               <img
                 src="./images/New Template.png"
                 alt="Sajjad Barzegar profile"
@@ -74,7 +87,7 @@
   </section>
 
   <!-- ABOUT SECTION -->
-  <section class="about-section" id="about">
+  <section class="about-section reveal reveal-up" id="about">
     <div class="container-fluid">
       <div class="row align-items-center justify-content-center g-4">
         <div class="col-lg-6">
@@ -107,7 +120,7 @@
   </section>
 
   <!-- RESEARCH SECTION -->
-  <section class="research-section" id="research">
+  <section class="research-section reveal reveal-up" id="research">
     <div class="container-fluid px-4">
       <h2 class="section-title">Research Interests</h2>
 
@@ -149,57 +162,91 @@
   </section>
 
   <!-- PAPERS SECTION -->
-  <section class="papers-section" id="papers">
-    <div class="container-fluid">
+  <section class="papers-section reveal reveal-up" id="papers">
+    <div class="container">
       <h2 class="section-title">Papers</h2>
-      <h3>Journal Papers</h3>
-    <ul>
-        <li>S. Barzegar, M.R. Zare, F. Shojaei, Z. Zareshahrabadi, O. Koohi-Hosseinabadi, M.J. 
-Saharkhiz, A. Iraji, K. Zomorodian, M. Khorram, Core-shell chitosan/PVA-based 
-nanofibrous scaffolds loaded with Satureja mutica or Oliveria decumbens essential oils as 
-enhanced antimicrobial wound dressing, Int. J. Pharm. 597 (2021) 120288. (<a href="">Abstract</a>) </li>
-<li>M.R. Zare, M. Khorram, S. Barzegar, B. Sarkari, Q. Asgari, International Journal of 
-Biological Macromolecules Dissolvable carboxymethyl cellulose / polyvinyl pyrrolidone 
-microneedle arrays for transdermal delivery of Amphotericin B to treat cutaneous 
-leishmaniasis, Int. J. Biol. Macromol. 182 (2021) 1310–1321. (<a href="">Abstract</a> ) </li>
-<li>M. Reza Zare, M. Khorram, S. Barzegar, F. Asadian, Z. Zareshahrabadi, M. Jamal 
-Saharkhiz, S. Ahadian, K. Zomorodian, Antimicrobial core-shell electrospun nanofibers 
-containing Ajwain essential oil for accelerating infected wound healing, Int. J. Pharm. 
-(2021) 120698. (<a href="">Abstract</a>) </li> 
-<li>H. Khodadi, K. Zomorodian, H. Nouraei, Z. Zareshahrabadi, S. Barzegar, M.R. Zare, K. 
-Pakshir, Prevalence of superficial-cutaneous fungal infections in Shiraz, Iran: A five-year 
-retrospective study (2015-2019), Journal of Clinical Laboratory Analysis. (<a href="">Abstract</a>)</li>  
-<li> Q. Asgari, M. Alishahi, F. Davani, D. Caravan, M. Khorram, Y. Enjavi, S. Barzegar, F. 
-Esfandiari, K. Zomorodian, Fabrication of amphotericin B-loaded electrospun core-shell 
-nanofibers as a novel dressing for superficial mycoses and cutaneous leishmaniasis, Int. J. 
-Pharm. (2021) 120911. (<a href="">Abstract</a>) </li>
-<li>R. Eivazzadeh-Keihan, Z. Saadatidizaji, A. Maleki, M. de la Guardia, M. Mahdavi, S. 
-Barzegar, S. Ahadian, Recent Progresses in Development of Biosensors for Thrombin 
-Detection. Biosensors 2022, 12, 767. (<a href="">Abstrat</a>)</li>
-<li>MR. Zare, S. Barzegar, S. Ahadian, Chapter 18 – Functionalized polymersomes for cancer 
-therapy, Functionalized Nanomaterials for Cancer Research, Academic Press, 2024, Pages 
-383-414, ISBN 9780443155185. (<a href="">Abstract</a>) </li>
-    </ul>
-    <h2>Conference Papers</h2>
-    <ul>
-        <li>A. Mansourieh, H. Khosravi, H. Shojaei, S. Barzegar, M. Feilizadeh, Investigating the 
-effect of using double-glazed window on the heat loss from building: Using computational 
-fluid dynamics, 7th National Congress on Chemistry and Chemical Engineering, Tehran, 
-Iran. (2020). <a href="">Please Click Here</a> </li>
-    </ul>
-    <hr>
+      <p class="section-intro">
+        Selected journal publications and conference contributions.
+      </p>
+
+      <div class="papers-group">
+        <h3 class="papers-subtitle">Journal Papers</h3>
+        <ul class="paper-list">
+          <li class="paper-entry">
+            <span class="paper-citation">M.R. Zare, M. Khorram, M. R. Mohammadpour, S. Ahadian, M. Salehi, A. Z. Jam, B. M. Zakeri, M. Aghaei, A. Hashemian, M. Shafiq, Y. S. Joung, S. Barzegar, K. Zomorodian, M. Mahmoodi, S. M. A. Hosseini, Stimuli-responsive polymeric micro/nanoparticles as smart drug delivery systems for cancer treatment. <em>Current Medicinal Chemistry</em>. (<a href="">Abstract</a>)</span>
+          </li>
+
+          <li class="paper-entry">
+            <span class="paper-citation">M.R. Zare, M. Khorram, S. Barzegar, M. Jamal Saharkhiz, A. Iraji, K. Zomorodian, Core-shell chitosan/PVA-based nanofibrous scaffolds loaded with <em>Satureja mutica</em> or <em>Oliveria decumbens</em> essential oils as enhanced antimicrobial wound dressing, <em>International Journal of Pharmaceutics</em> 597 (2021) 120288. (<a href="">Abstract</a>)</span>
+          </li>
+
+          <li class="paper-entry">
+            <span class="paper-citation">M.R. Zare, M. Khorram, S. Barzegar, B. Sarkari, Q. Asgari, Dissolvable carboxymethyl cellulose / polyvinyl pyrrolidone microneedle arrays for transdermal delivery of Amphotericin B to treat cutaneous leishmaniasis, <em>International Journal of Biological Macromolecules</em> 182 (2021) 1310–1321. (<a href="">Abstract</a>)</span>
+          </li>
+
+          <li class="paper-entry">
+            <span class="paper-citation">M. Reza Zare, M. Khorram, S. Barzegar, F. Asadian, Z. Zareshahrabadi, M. Jamal Saharkhiz, S. Ahadian, K. Zomorodian, Antimicrobial core-shell electrospun nanofibers containing Ajwain essential oil for accelerating infected wound healing, <em>International Journal of Pharmaceutics</em> (2021) 120698. (<a href="">Abstract</a>)</span>
+          </li>
+
+          <li class="paper-entry">
+            <span class="paper-citation">H. Khodadi, K. Zomorodian, H. Nouraei, Z. Zareshahrabadi, S. Barzegar, M.R. Zare, K. Pakshir, Prevalence of superficial-cutaneous fungal infections in Shiraz, Iran: A five-year retrospective study (2015–2019), <em>Journal of Clinical Laboratory Analysis</em>. (<a href="">Abstract</a>)</span>
+          </li>
+
+          <li class="paper-entry">
+            <span class="paper-citation">Q. Asgari, M. Alishahi, F. Davani, D. Caravan, M. Khorram, Y. Enjavi, S. Barzegar, F. Esfandiari, K. Zomorodian, Fabrication of amphotericin B-loaded electrospun core-shell nanofibers as a novel dressing for superficial mycoses and cutaneous leishmaniasis, <em>International Journal of Pharmaceutics</em> (2021) 120911. (<a href="">Abstract</a>)</span>
+          </li>
+
+          <li class="paper-entry">
+            <span class="paper-citation">R. Eivazzadeh-Keihan, Z. Saadatidizaji, A. Maleki, M. de la Guardia, M. Mahdavi, S. Barzegar, S. Ahadian, Recent Progresses in Development of Biosensors for Thrombin Detection. <em>Biosensors</em> 2022, 12, 767. (<a href="">Abstract</a>)</span>
+          </li>
+
+          <li class="paper-entry">
+            <span class="paper-citation">MR. Zare, S. Barzegar, S. Ahadian, Chapter 18 – Functionalized polymersomes for cancer therapy, <em>Functionalized Nanomaterials for Cancer Research</em>, Academic Press, 2024, Pages 383–414, ISBN 9780443155185. (<a href="">Abstract</a>)</span>
+          </li>
+        </ul>
+      </div>
+
+      <div class="papers-group">
+        <h3 class="papers-subtitle">Conference Papers</h3>
+        <ul class="paper-list">
+          <li class="paper-entry">
+            <span class="paper-citation">A. Mansourieh, H. Khosravi, H. Shojaei, S. Barzegar, M. Feilizadeh, Investigating the effect of using double-glazed window on the heat loss from building: Using computational fluid dynamics, 7th National Congress on Chemistry and Chemical Engineering, Tehran, Iran (2020). <a href="">Please Click Here</a></span>
+          </li>
+        </ul>
+      </div>
     </div>
   </section>
 
   <!-- CONTACT SECTION -->
-  <section class="contact-section" id="contact">
+  <section class="contact-section reveal reveal-up" id="contact">
     <div class="container">
       <h2 class="section-title">Contact</h2>
-      <div class="section-intro">
-        <p>Phone: +44 7881 143576</p>
-        <Address>28 Union Street, Coleraine,UK</Address>
+      <p class="section-intro">
+        For academic collaboration, research enquiries, or professional correspondence.
+      </p>
+
+      <div class="row g-4 mt-1">
+        <div class="col-md-4">
+          <div class="contact-card h-100">
+            <h3>Phone</h3>
+            <p><a href="tel:+447881143576">+44 7881 143576</a></p>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="contact-card h-100">
+            <h3>Address</h3>
+            <p>28 Union Street, Coleraine, UK</p>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="contact-card h-100">
+            <h3>Email</h3>
+            <p><a href="mailto:barzegar.sjd@gmail.com">barzegar.sjd@gmail.com</a></p>
+          </div>
+        </div>
       </div>
-      <p class="mb-0">barzegar.sjd@gmail.com</p>
     </div>
   </section>
 
@@ -215,5 +262,24 @@ Iran. (2020). <a href="">Please Click Here</a> </li>
     integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
     crossorigin="anonymous"
   ></script>
+
+  <script>
+    const reveals = document.querySelectorAll(".reveal");
+
+    const revealObserver = new IntersectionObserver((entries, observer) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("is-visible");
+          observer.unobserve(entry.target);
+        }
+      });
+    }, {
+      threshold: 0.15
+    });
+
+    reveals.forEach((element) => {
+      revealObserver.observe(element);
+    });
+  </script>
 </body>
 </html>
